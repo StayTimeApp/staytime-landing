@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.lang == 'zh' %}{{ site.data.i18n.zh.site.title }}{% else %}{{ site.data.i18n.en.site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.lang == 'zh' %}{{ site.data.i18n.zh.site.description }}{% else %}{{ site.data.i18n.en.site.description }}{% endif %}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+</head>
+<body>
+    <header class="page-header">
+        <div class="language-selector">
+            <select id="language-selector" onchange="setLanguage(this.value)">
+                <option value="zh">中文</option>
+                <option value="en">English</option>
+            </select>
+        </div>
+        <h1 class="project-name">{% if page.lang == 'zh' %}{{ site.data.i18n.zh.site.title }}{% else %}{{ site.data.i18n.en.site.title }}{% endif %}</h1>
+        <h2 class="project-tagline">{% if page.lang == 'zh' %}{{ site.data.i18n.zh.site.description }}{% else %}{{ site.data.i18n.en.site.description }}{% endif %}</h2>
+    </header>
+
+    <main class="main-content">
+        {{ content }}
+    </main>
+
+    <script src="{{ '/assets/js/i18n.js' | relative_url }}"></script>
+</body>
+</html> 
