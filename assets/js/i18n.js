@@ -1,6 +1,5 @@
 function getLanguage() {
-    const lang = localStorage.getItem('language') || getBrowserLanguage() || 'en';
-    return ['zh', 'en', 'ru'].includes(lang) ? lang : 'en';
+    return localStorage.getItem('language') || getBrowserLanguage() || 'en';
 }
 
 function getBrowserLanguage() {
@@ -12,7 +11,9 @@ function getBrowserLanguage() {
 
 function setLanguage(lang) {
     localStorage.setItem('language', lang);
-    window.location.reload();
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.replace(/\/(zh|en|ru)\//, '/').replace(/\/$/, '');
+    window.location.href = `/${lang}${newPath}`;
 }
 
 // 初始化语言选择器

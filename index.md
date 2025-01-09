@@ -1,12 +1,8 @@
 ---
 layout: default
-lang: auto
 ---
 
-{% assign lang = page.lang | default: site.lang | default: "en" %}
-{% assign i18n = site.data.i18n[lang] %}
-
-{{ i18n.header.slogan }}
+{% assign i18n = site.data.i18n[page.lang] %}
 
 <div class="highlights-section">
   <div class="highlight-item">
