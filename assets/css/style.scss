@@ -236,4 +236,40 @@
       }
     }
   }
+}
+
+// 语言切换器样式
+.language-selector {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 100;
+  
+  select {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    option {
+      background-color: #fff;
+      color: #333;
+    }
+  }
+  
+  @media screen and (max-width: 42em) {
+    position: relative;
+    top: 0;
+    right: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 } 

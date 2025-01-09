@@ -7,6 +7,10 @@ github:
   is_project_page: false
 
 # 多语言设置
+languages: ["en", "zh", "ru"]
+default_lang: "en"
+exclude_from_localizations: ["assets", "images"]
+
 defaults:
   -
     scope:
