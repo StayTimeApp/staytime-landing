@@ -17,4 +17,9 @@ defaults:
     scope:
       path: "zh"
     values:
-      lang: "zh" 
+      lang: "zh"
+  -
+    scope:
+      path: "ru"
+    values:
+      lang: "ru" 

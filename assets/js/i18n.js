@@ -1,11 +1,13 @@
 function getLanguage() {
     const lang = localStorage.getItem('language') || getBrowserLanguage() || 'en';
-    return ['zh', 'en'].includes(lang) ? lang : 'en';
+    return ['zh', 'en', 'ru'].includes(lang) ? lang : 'en';
 }
 
 function getBrowserLanguage() {
     const lang = navigator.language || navigator.userLanguage;
-    return lang.toLowerCase().startsWith('zh') ? 'zh' : 'en';
+    if (lang.toLowerCase().startsWith('zh')) return 'zh';
+    if (lang.toLowerCase().startsWith('ru')) return 'ru';
+    return 'en';
 }
 
 function setLanguage(lang) {
