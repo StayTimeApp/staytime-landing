@@ -1,3 +1,7 @@
 title: StayTime - AppLock Ultimate
-description: Protect your privacy and promote healthy phone usage
-theme: jekyll-theme-cayman 
+description: 保护您的隐私，培养健康的手机使用习惯
+theme: jekyll-theme-cayman
+show_downloads: false
+google_analytics: # 如果需要添加 Google Analytics，在这里添加跟踪 ID
+github:
+  is_project_page: false 

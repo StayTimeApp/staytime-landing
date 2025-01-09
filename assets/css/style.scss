@@ -1,0 +1,108 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// 自定义样式
+.page-header {
+  background-color: #4A90E2;
+  background-image: linear-gradient(120deg, #4A90E2, #50E3C2);
+  padding: 3rem 6rem;
+  
+  @media screen and (max-width: 42em) {
+    padding: 2rem 1rem;
+  }
+}
+
+.project-name {
+  font-size: 3.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-tagline {
+  font-size: 1.25rem;
+  opacity: 0.8;
+  margin-bottom: 2rem;
+}
+
+.main-content {
+  max-width: 64rem;
+  padding: 2rem 6rem;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  
+  @media screen and (max-width: 42em) {
+    padding: 2rem 1rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #2C3E50;
+    font-weight: 600;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 2rem; }
+  h3 { font-size: 1.5rem; }
+}
+
+// 功能区块样式
+.feature-section {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  
+  h3 {
+    color: #4A90E2;
+    margin-top: 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+    
+    li {
+      margin-bottom: 0.5rem;
+      padding-left: 1.5rem;
+      position: relative;
+      
+      &:before {
+        content: "✓";
+        color: #50E3C2;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+}
+
+// 下载按钮样式
+.download-section {
+  text-align: center;
+  margin: 3rem 0;
+  
+  img {
+    max-width: 200px;
+    transition: transform 0.2s;
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+// 联系我们样式
+.contact-section {
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  
+  h2 {
+    color: #4A90E2;
+  }
+} 
