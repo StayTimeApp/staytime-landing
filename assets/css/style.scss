@@ -208,13 +208,13 @@ body {
   
   .screenshot-grid {
     position: relative;
-    height: 600px;
+    height: 500px;
     max-width: 1000px;
     margin: 0 auto;
     
     .screenshot-item {
       position: absolute;
-      width: 240px;
+      width: 200px;
       transition: all 0.3s ease;
       
       img {
@@ -232,30 +232,30 @@ body {
       }
       
       &:nth-child(2) {
-        left: calc(50% - 180px);
+        left: calc(50% - 150px);
         top: 50%;
-        transform: translate(-50%, -50%) rotate(-15deg);
+        transform: translate(-50%, -50%) rotate(-10deg);
         z-index: 4;
       }
       
       &:nth-child(3) {
-        left: calc(50% + 180px);
+        left: calc(50% + 150px);
         top: 50%;
-        transform: translate(-50%, -50%) rotate(15deg);
+        transform: translate(-50%, -50%) rotate(10deg);
         z-index: 4;
       }
       
       &:nth-child(4) {
-        left: calc(50% - 320px);
+        left: calc(50% - 300px);
         top: 50%;
-        transform: translate(-50%, -50%) rotate(-30deg);
+        transform: translate(-50%, -50%) rotate(-20deg);
         z-index: 3;
       }
       
       &:nth-child(5) {
-        left: calc(50% + 320px);
+        left: calc(50% + 300px);
         top: 50%;
-        transform: translate(-50%, -50%) rotate(30deg);
+        transform: translate(-50%, -50%) rotate(20deg);
         z-index: 3;
       }
       
