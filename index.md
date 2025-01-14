@@ -5,7 +5,9 @@ layout: default
 <div class="app-header">
   <a href="/" class="logo">StayTime</a>
   <nav class="main-nav">
-    <a href="#features">Features</a>
+    <a href="#features">App Blocking</a>
+    <a href="#usage-stats">Usage Stats</a>
+    <a href="#productivity">Productivity</a>
     <a href="#screenshots">Screenshots</a>
     <a href="#reviews">Reviews</a>
     <a href="#support">Support</a>
@@ -15,9 +17,9 @@ layout: default
 
 <div class="hero">
   <div class="hero-content">
-    <h1>Take Control of Your Screen Time</h1>
+    <h1>Free yourself from over-use and distractions</h1>
     <h2>Stop wasting time!</h2>
-    <p>Seamlessly manage your device usage and stay productive. With StayTime you can <strong>block distracting apps</strong>, track your <strong>screen time</strong>, and maintain a healthy <strong>digital balance</strong>.</p>
+    <p>Take control of your digital life. With StayTime you can <strong>block apps and websites</strong>, understand/visualize your <strong>device usage</strong>, and stay <strong>productive</strong>.</p>
     <div class="download-buttons">
       <a href="https://play.google.com/store/apps/details?id=com.kapp.applocker" class="store-button">
         <img src="assets/images/google-play-badge.png" alt="Get it on Google Play">
@@ -32,31 +34,31 @@ layout: default
 <section id="features" class="features">
   <div class="feature-block">
     <div class="feature-content">
-      <h2>Smart App Blocking</h2>
-      <p>Take control of your digital life.</p>
-      <p>Set <strong>usage limits</strong> for distracting apps, enable <strong>Focus Mode</strong> during work hours, and use <strong>Sleep Mode</strong> for better rest. StayTime helps you stay focused and productive by managing your app usage effectively.</p>
+      <h2>Block Distracting Apps</h2>
+      <p>StayTime has your back.</p>
+      <p>Whether it's setting <strong>usage limits</strong>, settling into <strong>Focus Mode</strong>, managing notifications and alerts, or unwinding before bed with <strong>Sleep Mode</strong>, StayTime is your one-stop-shop for freeing up your valuable time and blocking apps that you find distracting.</p>
     </div>
     <div class="feature-image">
       <img src="assets/images/2.png" alt="App Lock Feature" class="floating">
     </div>
   </div>
 
-  <div class="feature-block reverse">
+  <div class="feature-block reverse" id="usage-stats">
     <div class="feature-content">
-      <h2>Detailed Usage Insights</h2>
-      <p>Understand your digital habits with comprehensive usage statistics. Track your daily app usage patterns and identify time-consuming apps.</p>
-      <p>Get detailed reports and analytics to help you make informed decisions about your screen time.</p>
+      <h2>Understand Your Device Usage</h2>
+      <p>Our powerful tracking features help you visualize usage stats across your device. Graphs help you understand your busiest periods throughout the day and cut down on usage when you should be focusing on other commitments.</p>
+      <p>For work and personal usage, StayTime takes screen time tracking to a whole new level.</p>
     </div>
     <div class="feature-image">
       <img src="assets/images/3.png" alt="Usage Statistics" class="floating">
     </div>
   </div>
 
-  <div class="feature-block">
+  <div class="feature-block" id="productivity">
     <div class="feature-content">
-      <h2>Stay Focused & Productive</h2>
-      <p>Boost your productivity with powerful focus tools. Schedule focused work sessions and eliminate distractions.</p>
-      <p>Use <strong>Focus Mode</strong> to block distracting apps and stay on task. Create a distraction-free environment that helps you achieve more.</p>
+      <h2>Focus On What's Important</h2>
+      <p>Understanding and control leads to gains in <strong>productivity</strong>. Accomplish more during your days with StayTime and get back hours of wasted time.</p>
+      <p>Use <strong>Focus Mode</strong> to schedule time away from your phone. Create a space where you can be most productive.</p>
     </div>
     <div class="feature-image">
       <img src="assets/images/4.png" alt="Focus Mode" class="floating">
@@ -90,28 +92,28 @@ layout: default
   <div class="review-grid">
     <div class="review-item">
       <div class="review-content">
-        <p>"Perfect app for managing screen time! The usage tracking and app blocking features work flawlessly. Highly recommended!"</p>
+        <p>"It does what it says! I really like the fact that it works with apps and has a gentle reminder where you can add time. The app blocking features work flawlessly."</p>
       </div>
       <div class="review-author">
-        <div class="author-name">Emily W.</div>
+        <div class="author-name">Emma H.</div>
         <div class="rating">⭐⭐⭐⭐⭐</div>
       </div>
     </div>
     <div class="review-item">
       <div class="review-content">
-        <p>"This app helped me reduce my social media usage significantly. The focus mode is a game-changer for productivity."</p>
+        <p>"This has been so helpful in limiting my screen time. It's easy to set the limits for how much time I want to spend on each app, and it gives me a warning when I'm nearing that limit."</p>
       </div>
       <div class="review-author">
-        <div class="author-name">James L.</div>
+        <div class="author-name">Chris R.</div>
         <div class="rating">⭐⭐⭐⭐⭐</div>
       </div>
     </div>
     <div class="review-item">
       <div class="review-content">
-        <p>"Great for parents! I can easily monitor and control my kids' screen time. The interface is simple and intuitive."</p>
+        <p>"This app really helps people to know how much time is wasted on social media. The focus mode is a game-changer for productivity."</p>
       </div>
       <div class="review-author">
-        <div class="author-name">Sarah M.</div>
+        <div class="author-name">Alex S.</div>
         <div class="rating">⭐⭐⭐⭐⭐</div>
       </div>
     </div>
@@ -120,7 +122,7 @@ layout: default
 
 <section id="support" class="support">
   <h2>Need Help?</h2>
-  <p>We're here to help you get the most out of StayTime. Check our user guide for detailed instructions, or contact our support team for assistance.</p>
+  <p>Read our online guide if you want to learn more about using StayTime. Or if you're having problems, feel free to contact our support team for assistance.</p>
   <div class="support-links">
     <a href="#" class="support-button">Read User Guide</a>
     <a href="mailto:feedback@applockguard.com" class="support-button">Contact Support</a>

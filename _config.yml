@@ -1,28 +1,10 @@
-title: StayTime - AppLock Ultimate
-description: Protect your privacy and promote healthy phone usage
+title: StayTime
+description: Take control of your screen time and boost productivity
+baseurl: ""
+url: ""
+
+# Build settings
+markdown: kramdown
 theme: jekyll-theme-cayman
-show_downloads: false
-google_analytics: # 如果需要添加 Google Analytics，在这里添加跟踪 ID
-github:
-  is_project_page: false
-
-# 多语言设置
-lang: en
-languages: ["en", "zh", "ru"]
-
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      lang: "en"
-  -
-    scope:
-      path: "zh"
-    values:
-      lang: "zh"
-  -
-    scope:
-      path: "ru"
-    values:
-      lang: "ru" 
+plugins:
+  - jekyll-feed 
