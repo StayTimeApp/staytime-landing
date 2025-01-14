@@ -196,6 +196,7 @@ body {
 .screenshots {
   padding: 4rem 2rem;
   background: #f8f9fa;
+  overflow: hidden;
   
   h2 {
     font-size: 2rem;
@@ -206,28 +207,61 @@ body {
   }
   
   .screenshot-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    max-width: 1200px;
+    position: relative;
+    height: 600px;
+    max-width: 1000px;
     margin: 0 auto;
     
     .screenshot-item {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      position: absolute;
+      width: 240px;
+      transition: all 0.3s ease;
       
       img {
         width: 100%;
-        max-width: 200px;
         height: auto;
         border-radius: 20px;
         box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
-        
-        &:hover {
-          transform: translateY(-8px);
-        }
+      }
+      
+      &:nth-child(1) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 5;
+      }
+      
+      &:nth-child(2) {
+        left: calc(50% - 180px);
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-15deg);
+        z-index: 4;
+      }
+      
+      &:nth-child(3) {
+        left: calc(50% + 180px);
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(15deg);
+        z-index: 4;
+      }
+      
+      &:nth-child(4) {
+        left: calc(50% - 320px);
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-30deg);
+        z-index: 3;
+      }
+      
+      &:nth-child(5) {
+        left: calc(50% + 320px);
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(30deg);
+        z-index: 3;
+      }
+      
+      &:hover {
+        transform: translate(-50%, -50%) scale(1.1) rotate(0deg) !important;
+        z-index: 10;
       }
     }
   }
