@@ -4,92 +4,69 @@ layout: default
 
 {% assign i18n = site.data.i18n[page.lang] %}
 
+<div class="hero-section">
+  <h1>{{ i18n.site.title }}</h1>
+  <p class="hero-description">{{ i18n.site.description }}</p>
+  <div class="hero-buttons">
+    <a href="https://play.google.com/store/apps/details?id=com.kapp.applocker&hl=en" target="_blank" class="download-button">
+      <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"/>
+    </a>
+  </div>
+</div>
+
+<div class="main-features">
+  <div class="feature-block">
+    <h2>{{ i18n.features.app_lock.title }}</h2>
+    <p>{{ i18n.features.app_lock.items[0] }}</p>
+    <div class="screenshots-section">
+      <div class="screenshot-grid">
+        <div class="screenshot-item">
+          <img src="assets/images/1.png" alt="App Lock Screen" />
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/2.png" alt="Usage Statistics" />
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/3.png" alt="Settings Screen" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-block">
+    <h2>{{ i18n.features.screen_time.title }}</h2>
+    <p>{{ i18n.features.screen_time.items[0] }}</p>
+    <div class="screenshots-section">
+      <div class="screenshot-grid">
+        <div class="screenshot-item">
+          <img src="assets/images/4.png" alt="Time Management" />
+        </div>
+        <div class="screenshot-item">
+          <img src="assets/images/5.png" alt="Privacy Protection" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="highlights-section">
   <div class="highlight-item">
     <div class="highlight-icon">🔒</div>
-    <h4>{{ i18n.highlights.security.title }}</h4>
+    <h3>{{ i18n.highlights.security.title }}</h3>
     <p>{{ i18n.highlights.security.description }}</p>
   </div>
   
   <div class="highlight-item">
     <div class="highlight-icon">📊</div>
-    <h4>{{ i18n.highlights.visualization.title }}</h4>
+    <h3>{{ i18n.highlights.visualization.title }}</h3>
     <p>{{ i18n.highlights.visualization.description }}</p>
   </div>
   
   <div class="highlight-item">
     <div class="highlight-icon">🎯</div>
-    <h4>{{ i18n.highlights.personalization.title }}</h4>
+    <h3>{{ i18n.highlights.personalization.title }}</h3>
     <p>{{ i18n.highlights.personalization.description }}</p>
   </div>
-</div>
-
-<h2>{{ i18n.features.title }}</h2>
-
-<div class="feature-section">
-  <h3>🛡️ {{ i18n.features.app_lock.title }}</h3>
-  <ul>
-    {% for item in i18n.features.app_lock.items %}
-    <li>{{ item }}</li>
-    {% endfor %}
-  </ul>
-</div>
-
-<div class="feature-section">
-  <h3>⏱️ {{ i18n.features.screen_time.title }}</h3>
-  <ul>
-    {% for item in i18n.features.screen_time.items %}
-    <li>{{ item }}</li>
-    {% endfor %}
-  </ul>
-</div>
-
-<div class="feature-section">
-  <h3>👮 {{ i18n.features.protection.title }}</h3>
-  <ul>
-    {% for item in i18n.features.protection.items %}
-    <li>{{ item }}</li>
-    {% endfor %}
-  </ul>
-</div>
-
-<h2>{{ i18n.screenshots.title }}</h2>
-
-<div class="screenshots-section">
-  <div class="screenshot-grid">
-    {% for item in i18n.screenshots.items %}
-    <div class="screenshot-item">
-      <img src="assets/images/screenshot{{ forloop.index }}.png" alt="{{ item.title }}" />
-      <div class="screenshot-caption">{{ item.description }}</div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-<h2>{{ i18n.testimonials.title }}</h2>
-
-<div class="testimonials-section">
-  <div class="testimonial-grid">
-    {% for item in i18n.testimonials.items %}
-    <div class="testimonial-item">
-      <div class="quote">{{ item.quote }}</div>
-      <div class="author">
-        <div class="name">{{ item.author }}</div>
-        <div class="rating">⭐⭐⭐⭐⭐</div>
-      </div>
-    </div>
-    {% endfor %}
-  </div>
-</div>
-
-<h2>{{ i18n.more_features.title }}</h2>
-
-<div class="feature-section">
-  <ul>
-    {% for item in i18n.more_features.items %}
-    <li><strong>{{ item.title }}</strong>: {{ item.description }}</li>
-    {% endfor %}
-  </ul>
 </div>
 
 <div class="download-section">
@@ -105,6 +82,6 @@ layout: default
   <p><strong>{{ i18n.contact.email }}</strong> <a href="mailto:feedback@applockguard.com">feedback@applockguard.com</a></p>
 </div>
 
-<div style="text-align: center; margin-top: 50px;">
+<footer>
   <small>{{ i18n.footer.copyright }}</small>
-</div> 
+</footer> 
