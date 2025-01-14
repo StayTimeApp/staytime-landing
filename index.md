@@ -72,27 +72,6 @@ layout: default
   </div>
 </section>
 
-<section id="screenshots" class="screenshots">
-  <h2>App Screenshots</h2>
-  <div class="screenshot-grid">
-    <div class="screenshot-item">
-      <img src="assets/images/1.png" alt="App Lock Screen">
-    </div>
-    <div class="screenshot-item">
-      <img src="assets/images/2.png" alt="Usage Statistics">
-    </div>
-    <div class="screenshot-item">
-      <img src="assets/images/3.png" alt="Settings Screen">
-    </div>
-    <div class="screenshot-item">
-      <img src="assets/images/4.png" alt="Focus Mode">
-    </div>
-    <div class="screenshot-item">
-      <img src="assets/images/5.png" alt="Privacy Protection">
-    </div>
-  </div>
-</section>
-
 <section id="reviews" class="reviews">
   <h2>What Users Say</h2>
   <div class="review-grid">
