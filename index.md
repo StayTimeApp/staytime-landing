@@ -2,6 +2,12 @@
 layout: default
 ---
 
+<head>
+  <meta name="description" content="StayTime - App Lock and Screen Time Management. Block distracting apps, track usage, and stay productive.">
+  <meta name="keywords" content="StayTime, App Lock, Screen Time, StayFree, Productivity, Digital Wellbeing, App Blocking, Usage Stats, Focus Mode, Sleep Mode, Device Usage, App Management, Time Management, Distraction Free, Android App, iOS App, Cross Platform, Usage Limits, Notifications, Alerts, Privacy Protection, Healthy Habits, Screen Time Tracking, App Usage, Digital Balance, Mobile Security">
+  <meta name="author" content="StayTime Team">
+</head>
+
 <div class="app-header">
   <a href="/" class="logo">StayTime</a>
   <nav class="main-nav">
